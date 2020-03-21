@@ -7,7 +7,7 @@ class Skeleton extends StatelessWidget {
   build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome to Flutter!'),
+        title: Text('DonateYourWork'),
       ),
       body: this.body,
     );
