@@ -25,7 +25,7 @@ class JobOverview extends StatelessWidget {
                   icon:Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
-                        builder:(context) => Skeleton(body: JobOverview()/*TODO change to right activity*/)
+                        builder:(context) => Skeleton(body: JobOverview() /* change to right activity*/ )
                     )
                     );
                   },

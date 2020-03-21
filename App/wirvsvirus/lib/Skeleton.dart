@@ -24,7 +24,13 @@ class _SkeletonState extends State<Skeleton> {
               Icons.edit,
               color: Colors.white,  
             ), 
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context) => Skeleton())
+              );
+
+            },
           ) : 
           IconButton(
             icon: Icon(Icons.account_circle), 
