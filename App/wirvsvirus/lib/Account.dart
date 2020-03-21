@@ -1,10 +1,15 @@
 class Account {
+  int id;
   String username;
   String firstname;
   String lastname;
   String description;
 
-  Account(this.username, this.firstname, this.lastname, this.description);
+  Account(this.id, this.username, this.firstname, this.lastname, this.description);
+
+  int get getId => id;
+
+  set setId(int id) => this.id = id;
 
   String get getUsername => username;
 

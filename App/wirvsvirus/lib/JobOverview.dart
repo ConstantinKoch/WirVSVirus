@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wirvsvirus/AccountView.dart';
 import 'package:wirvsvirus/JobDetails.dart';
 import 'package:wirvsvirus/Skeleton.dart';
 import 'Jobs.dart';
@@ -25,7 +26,7 @@ class JobOverview extends StatelessWidget {
                   icon:Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
-                        builder:(context) => Skeleton(body: JobOverview()/*TODO change to right activity*/)
+                        builder:(context) => Skeleton(body: AccountView()/*TODO change to Account activity*/)
                     )
                     );
                   },
@@ -57,6 +58,8 @@ class JobOverview extends StatelessWidget {
     );
   }
 }
+
+
 
 class JobListTile extends ListTile {
   final Jobs job;
