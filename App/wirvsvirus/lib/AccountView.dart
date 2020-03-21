@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:wirvsvirus/Account.dart';
+
+import 'Account.dart';
 
 class AccountView extends StatelessWidget {
   final user = Account('peter1', 'Peter', 'Schmidt', 'Bin arbeitslos, lol!');
-
+  
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -16,7 +16,7 @@ class _SkeletonState extends State<Skeleton> {
   build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DonateYourWork'),
+        title: Text('DontDonateYourWork'),
         actions: [
           (this.body.runtimeType == AccountView) ? 
           IconButton(
@@ -24,7 +24,13 @@ class _SkeletonState extends State<Skeleton> {
               Icons.edit,
               color: Colors.white,  
             ), 
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context) => Skeleton())
+              );
+
+            },
           ) : 
           IconButton(
             icon: Icon(Icons.account_circle), 

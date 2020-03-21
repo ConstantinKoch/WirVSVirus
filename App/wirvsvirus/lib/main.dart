@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+// import 'Account.dart';
 import 'skeleton.dart';
 import 'JobOverview.dart';
 
 void main() => runApp(MyApp());
+
+// final user = Account('peter1', 'Peter', 'Schmidt', 'Bin arbeitslos, lol!');
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
