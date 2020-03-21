@@ -3,18 +3,23 @@
 
 <div class="mdl-grid mdl-cell--12-col portfolio-max-width">
     <div class="mdl-cell mdl-cell--12-col" id="mdl-card__costumized">
-        <h1>Hello World!</h1>
+        <h1>Donate your work</h1>
     </div>
 
     <div class="mdl-cell mdl-cell--12-col">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+      Seid ihr eine infrastrukturkritische Organisation oder Unternehmen und benötigen weitere helfende Hände, um diese Krise zu überstehen?
+      Oder: Habt ihr aktuell keine Vorlesungen oder müsst in die Kurzarbeit und habt zusätzliche Kapazitäten sowie überflüssige Energie?
 
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+      <br>
+      <br>
+      Dann seid ihr hier genau richtig!
+      Bietet eure Hilfe den verschiedenen Unternehmen an und spendet dadurch gleichzeitig noch einen Betrag an gemeinnützige Organisationen.
+      Startet jetzt, tragt eure Daten ein und greift Hilfsbedürftigen unter die Arme!
     </div>
 
 
     <div class="mdl-cell mdl-cell--12-col">
-        <ul class="mdc-list mdc-list--two-line">
+        <ul class="mdc-list">
             <li class="mdc-list-item" tabindex="0">
             <span class="mdc-list-item__text">
                 <span class="mdc-list-item__primary-text">Two-line item</span>
@@ -132,9 +137,65 @@
     </div>
 
 
+    <div class="mdl-cell mdl-cell--12-col" align="left">
+      <h2>Kontakt</h2>
+      <form action="mailto:"
+            method="post" enctype="text/plain">
+          <div class="mdl-grid">
+              <div class="mdl-cell--6-col" align="center">
+                  <!-- Textfield with Floating Label (Name) -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="name_field"
+                            name="Name" ng-bind="name">
+                      <label class="mdl-textfield__label" for="name_field">Name</label>
+                  </div>
+              </div>
+              <div class="mdl-cell--6-col" align="center">
+                  <!-- Textfield with Floating Label (E-Mail) -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="email" id="e-mail_field"
+                            name="E-Mail" ng-bind="email_address">
+                      <label class="mdl-textfield__label" for="e-mail_field">E-Mail</label>
+                      <span class="mdl-textfield__error">Bitte geben Sie eine korrekte E-Mail Adresse ein!</span>
+                  </div>
+              </div>
+              <div class="mdl-cell--6-col" align="center">
+                  <!-- Numeric Textfield with Floating Label (Telefon) -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number_field"
+                            name="Telefonnummer" ng-bind="phone_number">
+                      <label class="mdl-textfield__label" for="number_field">Telefon</label>
+                      <span class="mdl-textfield__error">Bitte geben Sie nur Zahlen ein!</span>
+                  </div>
+              </div>
+              <div class="mdl-cell--6-col" align="center">
+                  <!-- Textfield with Floating Label (Adresse) -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="address_field"
+                            name="Adresse" ng-bind="address">
+                      <label class="mdl-textfield__label" for="address_field">Adresse</label>
+                  </div>
+              </div>
+              <div class="mdl-cell--12-col" align="center">
+                  <!-- Textfield with Floating Label (Nachricht) -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label input_field">
+                      <input class="mdl-textfield__input" type="text" id="nachricht_field"
+                            name="Nachricht" ng-bind="nachricht" maxlength="200">
+                      <label class="mdl-textfield__label" for="nachricht_field">Nachricht</label>
+                  </div>
+              </div>
+              <div class="mdl-cell--12-col" align="right">
+                  <button class="mdl-button mdl-js-button senden_style">
+                      Senden
+                  </button>
+              </div>
+          </div>
+      </form>
+    </div>
 
-    
 </div>
+
+  
 
 <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
