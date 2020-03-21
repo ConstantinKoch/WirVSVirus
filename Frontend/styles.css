@@ -1,6 +1,8 @@
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-image: url(images/beautiful-beauty-blue-bright.jpg);
+  background-size: 100%;
+  background-position-y: 20%;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -29,10 +31,11 @@
 }
 
 .portfolio-logo {
-  background: url(images/man-s-hand-in-shallow-focus-and-grayscale-photography.jpg) 50% no-repeat;
+  background: url(images/Hackathon_slogan_weiß.png) 50% no-repeat;
   background-size: cover;
+  /*background-color: black;*/
   height: 150px;
-  width: 150px;
+  width: 350px;
   margin: auto auto 10px;
 }
 
@@ -43,7 +46,7 @@
 }
 
 .portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   height: 45px;
 }
