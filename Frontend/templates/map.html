@@ -1,8 +1,124 @@
 
-<button class="mdc-button foo-button">
-    <div class="mdc-button__ripple"></div>
-    <span class="mdc-button__label">Button</span>
-  </button>
+<div class="mdl-grid mdl-cell--12-col portfolio-max-width">
+  
+    
+    <div class="mdl-cell mdl-cell--12-col" align="left">
+        <h2>Log In</h2>
+        <form action="mailto:"
+              method="post" enctype="text/plain">
+            <div class="mdl-grid">
+               
+                <div class="mdl-cell--6-col" align="center">
+                    <!-- Textfield with Floating Label (E-Mail) -->
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="email" id="e-mail_field"
+                              name="E-Mail" ng-bind="email_address">
+                        <label class="mdl-textfield__label" for="e-mail_field">E-Mail</label>
+                        <span class="mdl-textfield__error">Bitte geben Sie eine korrekte E-Mail Adresse ein!</span>
+                    </div>
+                </div>
+                
+                <div class="mdl-cell--6-col" align="center">
+                    <!-- Textfield with Floating Label (PLZ) -->
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="password" id="address_field"
+                              name="Adresse" ng-bind="address">
+                        <label class="mdl-textfield__label" for="address_field">Passwort</label>
+                    </div>
+                </div>
+               
+                <div class="mdl-cell--12-col" align="right">
+                    <button class="mdl-button mdl-js-button senden_style">
+                        Senden
+                    </button>
+                </div>
+            </div>
+        </form>
+      </div>
+
+  <div class="mdl-cell mdl-cell--12-col" align="left">
+    <h2>Registierung</h2>
+    <form action="mailto:"
+          method="post" enctype="text/plain">
+        <div class="mdl-grid">
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Textfield with Floating Label (Name) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="name_field"
+                          name="Name" ng-bind="name">
+                    <label class="mdl-textfield__label" for="name_field">Name</label>
+                </div>
+            </div>
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Textfield with Floating Label (E-Mail) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="email" id="e-mail_field"
+                          name="E-Mail" ng-bind="email_address">
+                    <label class="mdl-textfield__label" for="e-mail_field">E-Mail</label>
+                    <span class="mdl-textfield__error">Bitte geben Sie eine korrekte E-Mail Adresse ein!</span>
+                </div>
+            </div>
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Numeric Textfield with Floating Label (Telefon) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number_field"
+                          name="Telefonnummer " ng-bind="phone_number">
+                    <label class="mdl-textfield__label" for="number_field">Telefon (optional)</label>
+                    <span class="mdl-textfield__error">Bitte geben Sie nur Zahlen ein!</span>
+                </div>
+            </div>
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Textfield with Floating Label (PLZ) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="address_field"
+                          name="Adresse" ng-bind="address">
+                    <label class="mdl-textfield__label" for="address_field">PLZ</label>
+                </div>
+            </div>
+           
+            <div class="mdl-cell--12-col" align="right">
+                <button class="mdl-button mdl-js-button senden_style">
+                    Weiter
+                </button>
+            </div>
+        </div>
+    </form>
+  </div>
+
+  <div class="mdl-cell mdl-cell--12-col" align="left">
+    <h2>Passwort</h2>
+    <form action="mailto:"
+          method="post" enctype="text/plain">
+        <div class="mdl-grid">
+           
+            
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Textfield with Floating Label (Passwort) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="address_field"
+                          name="Adresse" ng-bind="address">
+                    <label class="mdl-textfield__label" for="address_field">Passwort</label>
+                </div>
+            </div>
+           
+            <div class="mdl-cell--6-col" align="center">
+                <!-- Textfield with Floating Label (Passwort) -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="address_field"
+                          name="Adresse" ng-bind="address">
+                    <label class="mdl-textfield__label" for="address_field">Bitte Passwort wiederholen</label>
+                </div>
+            </div>
+
+            <div class="mdl-cell--12-col" align="right">
+                <button class="mdl-button mdl-js-button senden_style">
+                    Senden
+                </button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
 
 
 <footer class="mdl-mini-footer">
