@@ -16,7 +16,7 @@ class _SkeletonState extends State<Skeleton> {
   build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DontDonateYourWork'),
+        title: Text('DonateYourWork'),
         actions: [
           (this.body.runtimeType == AccountView) ? 
           IconButton(
