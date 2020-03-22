@@ -16,8 +16,24 @@ def get_time():
     now = datetime.utcnow()
     return json_response(time=now)
 
+@app.route("/job", methods=["POST","GET"])
+def job():
+    if request.method == "GET":
+        title = request.args.get("title")
+        employer = request.args.get("employer")
+        donation = request.args.get("donation")
+        return f"It worked: {title}, {employer}, {donation}"
+    elif request.method == "POST":
+        return "It works"
 
+@app.route("/user", methods=["GET"])
+def user():
+    username = request.args.get("username")
+    email = request.args.get("email")
+    description = request.args.get("description")
+    location = request.args.get("location")
+    return f"user: {id}, {username}, {email}, {description}, {location}"
 
 if __name__ == "__main__":
-
+    
     app.run(host='0.0.0.0')
