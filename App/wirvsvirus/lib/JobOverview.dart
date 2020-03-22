@@ -23,7 +23,7 @@ class JobOverview extends StatelessWidget {
             child:Column(
               children: <Widget>[
                 IconButton(
-                  icon:Icon(IconData(59475, fontFamily: 'MaterialIcons')),
+                  icon: job.employer == 'Bundesledierung' ? Icon(Icons.access_alarms) : Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
                         builder:(context) => Skeleton(body: AccountView()/*TODO change to Account activity*/)
@@ -36,7 +36,13 @@ class JobOverview extends StatelessWidget {
             )
           ),
             title: Text(job.title),
-            subtitle: Text('Employer: ' + job.employer + ', Donation: ' + job.donation.toString()),
+            subtitle: Row(
+              children: [
+                Text(job.employer), 
+                Spacer(),
+                Text('Spende: ' + job.donation.toString()),
+              ],
+            ),
             trailing: IconButton(
                   icon: Icon(IconData(58377, fontFamily: 'MaterialIcons', matchTextDirection: true)),
                   onPressed: () {
