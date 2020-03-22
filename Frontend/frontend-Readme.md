@@ -1,6 +1,9 @@
 # Frontend Dokumentation
 
-Die Webapplikation soll dem 
+Die Webapplikation gibt eine Übersicht über die von Non-Profit-Organisationen oder Privatpersonen angebotenen Aufgaben.
+Außerdem erhält man hier eine schnelle Übersicht, wie viel jeweils an eine gemeinnützige Organisation gespendet wird.
+Über die Map können die Nutzer direkt auf ihren Heimatort zoomen, um Angebote in ihrer Umgebung ausfindig zu machen.
+Des Weiteren können sich sowohl Hilfesuchende als auch Hilfegebende registrieren, um die Sicherheit der Auftraggeber und -nehmer zu gewährleisten.
 
 ## Getting Started
 
