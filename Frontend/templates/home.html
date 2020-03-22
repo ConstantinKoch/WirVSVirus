@@ -9,7 +9,6 @@
     <div class="mdl-cell mdl-cell--12-col">
       Seid ihr eine infrastrukturkritische Organisation oder Unternehmen und benötigen weitere helfende Hände, um diese Krise zu überstehen?
       Oder: Habt ihr aktuell keine Vorlesungen oder müsst in die Kurzarbeit und habt zusätzliche Kapazitäten sowie überflüssige Energie?
-
       <br>
       <br>
       Dann seid ihr hier genau richtig!
@@ -18,34 +17,27 @@
       Startet jetzt, tragt eure Daten ein und greift Hilfsbedürftigen unter die Arme!
     </div>
 
+    <div class="jobPopup" ng-click="jobSelected()">Click me to toggle the popup!
+        <span class="jobPopupText myPopup">A Simple Popup!</span>
+      </div>
 
-    <!-- List for jobs -->
+
+
+    <!-- List for jobs with angular ng-repeat -->
     <div class="mdl-cell mdl-cell--12-col">
       <ul class="mdl-list">
-          <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        <div ng-repeat="job in jobOffers">
+          <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect jobPopup"
+            ng-click="jobSelected()">
+            <span class="jobPopupText" >A Simple Popup!</span>
             <span class="mdl-list__item-primary-content">
-              <i class="material-icons mdl-list__item-avatar">domain</i>
-              <span>Regale einräumen</span>
-              <span class="mdl-list__item-sub-title">Auftraggeber: Rewe, Spende: 20,00 &euro;</span>
+              <i class="material-icons mdl-list__item-avatar">{{job.icon}}</i>
+              <span>{{job.title}}</span>
+              <span class="mdl-list__item-sub-title">Auftraggeber: {{job.employer}}, Spende: {{job.donation}} &euro;</span>
             </span>
           </li>
         <li role="separator" class="mdc-list-divider"></li>
-        <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-avatar">person</i>
-            <span>Einkäufe erledigen</span>
-            <span class="mdl-list__item-sub-title">Auftraggeber: Oma Hilde, Spende: 0,00 &euro;</span>
-          </span>
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-        <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          <span class="mdl-list__item-primary-content">
-            <i class="material-icons mdl-list__item-avatar">domain</i>
-            <span>Klopapierkäufer kontrollieren</span>
-            <span class="mdl-list__item-sub-title">Auftraggeber: Aldi, Spende: 10,00 &euro;</span>
-          </span>
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
+      </div>
       </ul>
   </div>
 
