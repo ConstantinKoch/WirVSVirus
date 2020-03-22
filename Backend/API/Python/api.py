@@ -22,7 +22,7 @@ def job():
         title = request.args.get("title")
         employer = request.args.get("employer")
         donation = request.args.get("donation")
-        return f"It worked: {title}, {employer}, {donation}"
+        return "It worked"
     elif request.method == "POST":
         return "It works"
 
@@ -32,7 +32,7 @@ def user():
     email = request.args.get("email")
     description = request.args.get("description")
     location = request.args.get("location")
-    return f"user: {id}, {username}, {email}, {description}, {location}"
+    return "user"
 
 if __name__ == "__main__":
     

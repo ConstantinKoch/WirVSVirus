@@ -1,3 +1,4 @@
 .vscode
 Backend/API/Python/__pycache__
 Backend/API/Python/venv
+request.http
