@@ -1,64 +1,57 @@
 .portfolio-header {
-  position: relative;
-  background-image: url(images/beautiful-beauty-blue-bright.jpg);
-  background-size: 100%;
-  background-position-y: 20%;
+    position: relative;
+    background-image: url(images/beautiful-beauty-blue-bright.jpg);
+    background-size: 100%;
+    background-position-y: 20%;
 }
 
 .background-style {
-  background-image: url(images/photo-of-people-near-wooden-table-3184431.jpg);
-  background-size: 100%;
-
+    background-image: url(images/photo-of-people-near-wooden-table-3184431.jpg);
+    background-size: 100%;
 }
 
 .portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    padding: 0;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .mdl-layout__title {
-  font-size: 14px;
-  text-align: center;
-  font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
 }
 
 .is-compact .mdl-layout__title span {
-  display: none;
+    display: none;
 }
 
 .portfolio-logo-row {
-  min-height: 200px;
+    min-height: 200px;
 }
 
 .is-compact .portfolio-logo-row {
-  min-height: auto;
-}
-
-.is-compact .portfolio-logo {
-  height: 50px;
-  width: 200px;
-  margin-top: 7px;
+    min-height: auto;
 }
 
 .portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  height: 45px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    height: 45px;
 }
 
-.portfolio-navigation-row  .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
+.portfolio-navigation-row .mdl-navigation {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
 }
 
 .portfolio-navigation-row .mdl-navigation__link {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  line-height: 20px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 20px;
 }
 
 .portfolio-navigation-row .is-hover:hover {
@@ -74,7 +67,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgb(0,188,212);
+    background-color: rgb(0, 188, 212);
     left: 15%;
 }
 
@@ -83,36 +76,39 @@
 }
 
 .portfolio-navigation-row .is-active {
-  position: relative;
-  font-weight: bold;
+    position: relative;
+    font-weight: bold;
 }
 
 .portfolio-navigation-row .is-active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(0,188,212);
-  left: 15%;
+    content: "";
+    width: 70%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 188, 212);
+    left: 15%;
 }
 
 .portfolio-card .mdl-card__title {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
+
 
 /* Costum card*/
+
 #mdl-card__costumized {
-    text-align : center;
-    align-content : center;
-    vertical-align : central;
-    font : bold;
- 
+    text-align: center;
+    align-content: center;
+    vertical-align: central;
+    font: bold;
 }
 
+
 /* For Laptop and PC */
+
 @media only screen and (min-width: 768px) {
     #mdl-card__costumized h1 {
         font-size: 52px;
@@ -121,88 +117,98 @@
         margin-bottom: 12px;
         text-align: center;
     }
-
     .portfolio-logo {
-      background: url(images/Hackathon_slogan_Logo_Projekt_01.png) 50% no-repeat;
-      background-size: cover;
-      /*background-color: black;*/
-      height: 150px;
-      width: 500px;
-      margin: auto auto 10px;
+        background: url(images/DonateYourWork-LogoSkizze3_png-bw.png) 50% no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 500px;
+        margin: auto auto 10px;
+    }
+    .is-compact .portfolio-logo {
+        background: url(images/HrzLogo-schwarz.png) 50% no-repeat;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        margin-top: 7px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-  #mdl-card__costumized h1 {
-      font-size: 52px;
-      letter-spacing: 24px;
-      margin-top: 12px;
-      margin-bottom: 12px;
-      text-align: center;
-  }
-
-  .portfolio-logo {
-    background: url(images/Hackathon_slogan_Logo_Projekt_02.png) 50% no-repeat;
-    background-size: cover;
-    /*background-color: black;*/
-    height: 150px;
-    width: 350px;
-    margin: auto auto 10px;
-  }
+    #mdl-card__costumized h1 {
+        font-size: 52px;
+        letter-spacing: 24px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .portfolio-logo {
+        background: url(images/DonateYourWork-Logo-weiß.png) 50% no-repeat;
+        background-size: cover;
+        /*background-color: black;*/
+        height: 150px;
+        width: 305px;
+        margin: auto auto 10px;
+    }
+    .is-compact .portfolio-logo {
+        background: url(images/HrzLogo-weiß.png) 50% no-repeat;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        margin-top: 7px;
+    }
 }
-
 
 .portfolio-blog-card-compact .mdl-card__title {
     padding-bottom: 0;
 }
 
-.portfolio-blog-card-bg > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+.portfolio-blog-card-bg>.mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 img.article-image {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .portfolio-copy {
-  max-width: 700px;
+    max-width: 700px;
 }
 
 .no-padding {
-  padding: 0;
+    padding: 0;
 }
 
-.no-left-padding{
-  padding-left: 0;
+.no-left-padding {
+    padding-left: 0;
 }
 
 .no-bottom-padding {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 .padding-top {
-  padding: 10px 0 0;
+    padding: 10px 0 0;
 }
 
 .portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
+    position: relative;
+    float: right;
+    top: -4px;
 }
 
-.demo-card-event > .mdl-card__actions {
+.demo-card-event>.mdl-card__actions {
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -210,18 +216,17 @@ img.article-image {
 }
 
 .portfolio-contact .mdl-textfield {
-  width: 100%;
+    width: 100%;
 }
 
 .portfolio-contact form {
-  max-width: 550px;
-  margin: auto;
+    max-width: 550px;
+    margin: auto;
 }
 
 footer {
-  position: relative;
-  background-image: url(images/beautiful-beauty-blue-bright.jpg);
-  background-size: 100%;
-  background-position-y: 30%;
+    position: relative;
+    background-image: url(images/beautiful-beauty-blue-bright.jpg);
+    background-size: 100%;
+    background-position-y: 30%;
 }
-
