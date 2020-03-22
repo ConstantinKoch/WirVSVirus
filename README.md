@@ -5,9 +5,9 @@ Andererseits würden viele Leute, die gerade aufgrund von ausfallenden Vorlesung
 Hier kommt DonateYourWork ins Spiel. 
 Hier können Non-Profit-Organisationen und Privatpersonen kleine und größere Aufgaben an hilfsbereite Menschen abgeben!
 
-## Getting Started
+## Wichtige Links
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- [Frontend Readme](Frontend/frontend-Readme.md)
 
 ### Prerequisites
 

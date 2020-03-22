@@ -26,7 +26,7 @@ Im Folgenden werden wichtige Bereiche beschrieben, um die App-Struktur klarzuste
 
 #### app.js
 
-Über einen RoutProvider von AngularJS werden die einzelnen Templates dynamisch eingebunden.
+Über einen RouteProvider von AngularJS werden die einzelnen Templates dynamisch eingebunden.
 
 #### templates
 
@@ -44,4 +44,4 @@ Hier werden die css Files abgelegt. Diese beinhalten den Style zu den einzelnen 
 
 ## Authors
 
-* **Christian Schreier** - *Initial work* 
+* **Christian Schreier**
