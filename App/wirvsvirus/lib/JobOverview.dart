@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wirvsvirus/AccountView.dart';
+import 'JobView.dart';
 import 'package:wirvsvirus/JobDetails.dart';
 import 'package:wirvsvirus/Skeleton.dart';
 import 'Jobs.dart';
 import 'Skeleton.dart';
+
 
 class JobOverview extends StatelessWidget {
   final List<Jobs> jobs = getJobs();
@@ -26,7 +28,7 @@ class JobOverview extends StatelessWidget {
                   icon: job.employer == 'Bundesledierung' ? Icon(Icons.access_alarms) : Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
-                        builder:(context) => Skeleton(body: AccountView()/*TODO change to Account activity*/)
+                        builder:(context) => Skeleton(body: AccountView())
                     )
                     );
                   },
@@ -54,7 +56,7 @@ class JobOverview extends StatelessWidget {
             ),
             onTap: (() {
               Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Skeleton(body: JobDetails())
+                  builder: (context) => Skeleton(body: JobView(job))
             )
             );
           }
