@@ -38,7 +38,7 @@
 
 .is-compact .portfolio-logo {
   height: 50px;
-  width: 50px;
+  width: 200px;
   margin-top: 7px;
 }
 
@@ -74,7 +74,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgb(0,188,212);/*rgb(255,64,129);*/
+    background-color: rgb(0,188,212);
     left: 15%;
 }
 
@@ -95,7 +95,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgb(0,188,212);/*rgb(255,64,129);*/
+  background-color: rgb(0,188,212);
   left: 15%;
 }
 
@@ -146,7 +146,7 @@
     background-size: cover;
     /*background-color: black;*/
     height: 150px;
-    width: 500px;
+    width: 350px;
     margin: auto auto 10px;
   }
 }
@@ -223,7 +223,5 @@ footer {
   background-image: url(images/beautiful-beauty-blue-bright.jpg);
   background-size: 100%;
   background-position-y: 30%;
-  /*background-image: url(images/footer-background.png);
-  background-size: cover;*/
 }
 
