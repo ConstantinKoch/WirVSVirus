@@ -1,7 +1,4 @@
-.vscode
-Backend/API/Python/__pycache__
-Backend/API/Python/venv
-request.http
+virt
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
