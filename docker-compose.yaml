@@ -1,0 +1,26 @@
+version: "3.2"
+
+services:
+  mysql:
+    image: mysql:5.6.40
+    container_name: mysqlDocker
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=Customer
+      - MYSQL_USER=hans
+      - MYSQL_PASSWORD=pwd
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+
+networks:
+  backend:
