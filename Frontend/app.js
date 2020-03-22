@@ -8,8 +8,8 @@ app.config(function($routeProvider) {
       controller: "homeController"
     })
     .when("/map", {
-      templateUrl: "../templates/map.html",
-      controller: "mapController"
+      templateUrl: "../templates/registration.html",
+      controller: "registrationController"
     })
     .otherwise({
       redirectTo: "/home"

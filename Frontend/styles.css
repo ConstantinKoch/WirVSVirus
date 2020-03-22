@@ -6,7 +6,7 @@
 }
 
 .background-style {
-  background-image: url(images/men-s-white-button-up-dress-shirt.jpg);
+  background-image: url(images/photo-of-people-near-wooden-table-3184431.jpg);
   background-size: 100%;
 
 }
@@ -34,15 +34,6 @@
 
 .is-compact .portfolio-logo-row {
   min-height: auto;
-}
-
-.portfolio-logo {
-  background: url(images/Hackathon_slogan_Logo_Projekt_01.png) 50% no-repeat;
-  background-size: cover;
-  /*background-color: black;*/
-  height: 150px;
-  width: 500px;
-  margin: auto auto 10px;
 }
 
 .is-compact .portfolio-logo {
@@ -121,6 +112,7 @@
  
 }
 
+/* For Laptop and PC */
 @media only screen and (min-width: 768px) {
     #mdl-card__costumized h1 {
         font-size: 52px;
@@ -129,6 +121,34 @@
         margin-bottom: 12px;
         text-align: center;
     }
+
+    .portfolio-logo {
+      background: url(images/Hackathon_slogan_Logo_Projekt_01.png) 50% no-repeat;
+      background-size: cover;
+      /*background-color: black;*/
+      height: 150px;
+      width: 500px;
+      margin: auto auto 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  #mdl-card__costumized h1 {
+      font-size: 52px;
+      letter-spacing: 24px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      text-align: center;
+  }
+
+  .portfolio-logo {
+    background: url(images/Hackathon_slogan_Logo_Projekt_02.png) 50% no-repeat;
+    background-size: cover;
+    /*background-color: black;*/
+    height: 150px;
+    width: 500px;
+    margin: auto auto 10px;
+  }
 }
 
 
