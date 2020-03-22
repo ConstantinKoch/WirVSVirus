@@ -1,6 +1,15 @@
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-image: url(images/beautiful-beauty-blue-bright.jpg);
+  background-size: 100%;
+  background-position-y: 20%;
+}
+
+.background-style {
+  background-image: url(images/men-s-white-button-up-dress-shirt.jpg);
+  background-size: 100%;
+  background-position-y: 50%;
+
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -29,10 +38,11 @@
 }
 
 .portfolio-logo {
-  background: url(images/man-s-hand-in-shallow-focus-and-grayscale-photography.jpg) 50% no-repeat;
+  background: url(images/Hackathon_slogan_Logo_Projekt_01.png) 50% no-repeat;
   background-size: cover;
+  /*background-color: black;*/
   height: 150px;
-  width: 150px;
+  width: 500px;
   margin: auto auto 10px;
 }
 
@@ -43,7 +53,7 @@
 }
 
 .portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   height: 45px;
 }
@@ -103,18 +113,6 @@
   padding-bottom: 0;
 }
 
-.portfolio-blog-card-full-bg {
-  background: url(images/example-blog03.jpg) center / cover;
-}
-
-.portfolio-blog-card-event-bg {
-  background: url(images/example-blog05.jpg) center / cover;
-}
-
-.portfolio-blog-card-strip-bg {
-  background: url(images/example-blog06.jpg) center / cover;
-}
-
 /* Costum card*/
 #mdl-card__costumized {
     text-align : center;
@@ -153,6 +151,7 @@ img.article-image {
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .portfolio-copy {
@@ -201,7 +200,11 @@ img.article-image {
 }
 
 footer {
-  background-image: url(images/footer-background.png);
-  background-size: cover;
+  position: relative;
+  background-image: url(images/beautiful-beauty-blue-bright.jpg);
+  background-size: 100%;
+  background-position-y: 30%;
+  /*background-image: url(images/footer-background.png);
+  background-size: cover;*/
 }
 
