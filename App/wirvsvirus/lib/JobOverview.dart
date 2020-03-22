@@ -23,7 +23,7 @@ class JobOverview extends StatelessWidget {
             child:Column(
               children: <Widget>[
                 IconButton(
-                  icon: job.employer == 'Bundesledierung' ? Icon(Icons.access_alarms) : Icon(IconData(59475, fontFamily: 'MaterialIcons')),
+                  icon: Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
                         builder:(context) => Skeleton(body: AccountView()/*TODO change to Account activity*/)
