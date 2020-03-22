@@ -19,9 +19,14 @@ class Donation {
 
 List<Jobs> getJobs() {
   var jobArr = [
-    Jobs(id: 1, title: 'Regale einräumen', employer: 'Rewe', donation: Donation(20.00)),
-    Jobs(id: 2, title: 'Einkäufe erledigen', employer: 'Oma Hilde', donation: Donation(00.00)),
-    Jobs(id: 3, title: 'Klopapierkäufer kontrollieren', employer: 'Aldi', donation: Donation(10.00)),
+    Jobs(title: 'Regale einräumen', employer: 'Littl', donation: Donation(20.00)),
+    Jobs(title: 'Einkäufe erledigen', employer: 'Oma Hilde', donation: Donation(00.00)),
+    Jobs(title: 'Klopapierkäufer kontrollieren', employer: 'Alda', donation: Donation(15.00)),
+    Jobs(title: 'Hund Gassi führen', employer: 'Dr. Schmidt', donation: Donation(5.0)),
+    Jobs(title: 'Hackathon gegen Corona organisieren', employer: 'Bundesledierung', donation: Donation(30.0)),
+    Jobs(title: 'Essen an Bedürftige liefern', employer: 'Essen auf Reifen', donation: Donation(10.0)),
+    Jobs(title: 'Kinderbetreuung', employer: 'Christine Wolf', donation: Donation(15.0)),
+    Jobs(title: 'Mundschutz an Bedürftige ausliefern', employer: 'Deutscher Rotes Schnneuz', donation: Donation(15.0)),
   ];
   return jobArr;
 }
