@@ -10,11 +10,4 @@
     $scope.jobOffers.push({ icon: 'domain', title : 'Klopapierkäufer kontrollieren', employer: 'Aldi', donation: '10,00'});
 
 
-    $scope.jobSelected = function() {
-        console.log("geht");
-        var popup = document.getElementById("myPopup");
-        console.log(popup);
-        popup.classList.toggle("show");
-      }
-
 }]);

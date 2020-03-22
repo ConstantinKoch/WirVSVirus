@@ -1,28 +1,11 @@
-
-<div id="mapid"></div>
-<style>
-    #mapid { height: 180px; }
-    
-       </style>
- <script>
-var corner1 = L.latLng(55.500,4.800);
-    var corner2 = L.latLng(46.700,15.500);
-    var bounds = L.latLngBounds(corner1, corner2);
-    // Create Map
-    var mymap = L.map('mapid').setView([51.000, 10.000], 6).setMaxBounds(bounds);
-    const attribution =
-          '$copy, <ahref="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-
-    L.tileLayer('https://a.tile.openstreetmap.de/${z}/${x}/${y}.png', {
-        attribution }).addTo(mymap);
-    
- </script>
+<!-- Costum Stylesheets-->
+<link rel="stylesheet" href="../stylesheets/mapStylesheet.css">
 
 <div class="mdl-grid mdl-cell--12-col portfolio-max-width">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div id="mapid" style="min-height: 800px;"></div>
+    </div>
    
-   
-
-    
     <div class="mdl-cell mdl-cell--12-col" align="left">
         <h2>Log In</h2>
         <form action="mailto:"
@@ -42,9 +25,9 @@ var corner1 = L.latLng(55.500,4.800);
                 <div class="mdl-cell--6-col" align="center">
                     <!-- Textfield with Floating Label (PLZ) -->
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="password" id="address_field"
-                              name="Adresse" ng-bind="address">
-                        <label class="mdl-textfield__label" for="address_field">Passwort</label>
+                        <input class="mdl-textfield__input" type="password" id="password_field"
+                              name="Passwort" ng-bind="password">
+                        <label class="mdl-textfield__label" for="password_field">Passwort</label>
                     </div>
                 </div>
                
@@ -58,7 +41,7 @@ var corner1 = L.latLng(55.500,4.800);
       </div>
 
   <div class="mdl-cell mdl-cell--12-col" align="left">
-    <h2>Registierung</h2>
+    <h2>Registrierung</h2>
     <form action="mailto:"
           method="post" enctype="text/plain">
         <div class="mdl-grid">
@@ -73,9 +56,9 @@ var corner1 = L.latLng(55.500,4.800);
             <div class="mdl-cell--6-col" align="center">
                 <!-- Textfield with Floating Label (E-Mail) -->
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="email" id="e-mail_field"
-                          name="E-Mail" ng-bind="email_address">
-                    <label class="mdl-textfield__label" for="e-mail_field">E-Mail</label>
+                    <input class="mdl-textfield__input" type="email" id="e-mail_field_register"
+                          name="E-Mail" ng-bind="email_address_register">
+                    <label class="mdl-textfield__label" for="e-mail_field_register">E-Mail</label>
                     <span class="mdl-textfield__error">Bitte geben Sie eine korrekte E-Mail Adresse ein!</span>
                 </div>
             </div>
@@ -91,27 +74,27 @@ var corner1 = L.latLng(55.500,4.800);
             <div class="mdl-cell--6-col" align="center">
                 <!-- Textfield with Floating Label (PLZ) -->
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="address_field"
-                          name="Adresse" ng-bind="address">
-                    <label class="mdl-textfield__label" for="address_field">PLZ</label>
+                    <input class="mdl-textfield__input" type="text" id="postal_code"
+                          name="Postleitzahl" ng-bind="postalCode">
+                    <label class="mdl-textfield__label" for="postal_code">PLZ</label>
                 </div>
             </div>
 
             <div class="mdl-cell--6-col" align="center">
                 <!-- Textfield with Floating Label (Passwort) -->
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="password" id="address_field"
-                          name="Adresse" ng-bind="address">
-                    <label class="mdl-textfield__label" for="address_field">Passwort</label>
+                    <input class="mdl-textfield__input" type="password" id="password_register"
+                          name="Passwort" ng-bind="password_register">
+                    <label class="mdl-textfield__label" for="password_register">Passwort</label>
                 </div>
             </div>
            
             <div class="mdl-cell--6-col" align="center">
                 <!-- Textfield with Floating Label (Passwort) -->
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="password" id="address_field"
-                          name="Adresse" ng-bind="address">
-                    <label class="mdl-textfield__label" for="address_field">Bitte Passwort wiederholen</label>
+                    <input class="mdl-textfield__input" type="password" id="password_repeat_register"
+                          name="Passwort" ng-bind="password_repeat_register">
+                    <label class="mdl-textfield__label" for="password_repeat_register">Bitte Passwort wiederholen</label>
                 </div>
             </div>
            

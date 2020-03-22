@@ -17,19 +17,12 @@
       Startet jetzt, tragt eure Daten ein und greift Hilfsbedürftigen unter die Arme!
     </div>
 
-    <div class="jobPopup" ng-click="jobSelected()">Click me to toggle the popup!
-        <span class="jobPopupText myPopup">A Simple Popup!</span>
-      </div>
-
-
 
     <!-- List for jobs with angular ng-repeat -->
     <div class="mdl-cell mdl-cell--12-col">
       <ul class="mdl-list">
         <div ng-repeat="job in jobOffers">
-          <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect jobPopup"
-            ng-click="jobSelected()">
-            <span class="jobPopupText" >A Simple Popup!</span>
+          <li class="mdl-list__item mdl-list__item--two-line mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-avatar">{{job.icon}}</i>
               <span>{{job.title}}</span>
@@ -83,8 +76,8 @@
               <div class="mdl-cell--12-col" align="center">
                   <!-- Textfield with Floating Label (Nachricht) -->
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label input_field">
-                      <input class="mdl-textfield__input" type="text" id="nachricht_field"
-                            name="Nachricht" ng-bind="nachricht" maxlength="200">
+                        <textarea class="mdl-textfield__input" type="text" rows="2" maxlength="400" id="message_field"
+                        name="Nachricht"></textarea>
                       <label class="mdl-textfield__label" for="nachricht_field">Nachricht</label>
                   </div>
               </div>
