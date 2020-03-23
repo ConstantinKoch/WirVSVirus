@@ -23,35 +23,22 @@ class _SkeletonState extends State<Skeleton> {
       appBar: AppBar(
         title: Text('DonateYourWork'),
         actions: [
-          (this.body.runtimeType == AccountView) ? 
-          IconButton(
-            icon: Icon(
-              Icons.edit,
-              color: Colors.white,  
-            ), 
-            onPressed: () {
-              Navigator.push(
-                context, 
-                MaterialPageRoute(builder: (context) => Skeleton())
-              );
-
-            },
-          ) : 
+          (this.body.runtimeType != JobOverview) ? 
+          Text('') : 
           Row(children: <Widget>[
             IconButton(
-              icon: Icon(Icons.search, color: Colors.white,),
             ),
+              icon: Icon(Icons.search, color: Colors.white,),
             IconButton(
-              icon: Icon(Icons.account_circle),
+              icon: Icon(Icons.account_circle), 
+          ],
               onPressed: () {
                 Navigator.push(
-                  context,
+                  context, 
                   MaterialPageRoute(builder: (context) => Skeleton(body: AccountView())),
                 );
               }
-              ),
-
-            ],
+            )
           ),
         ],
       ),
