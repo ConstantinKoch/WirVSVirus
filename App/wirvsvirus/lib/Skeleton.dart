@@ -12,6 +12,8 @@ class Skeleton extends StatefulWidget {
   _SkeletonState createState() => _SkeletonState(this.body);
 }
 
+
+
 class _SkeletonState extends State<Skeleton> {
   final Widget body;
   _SkeletonState(this.body);
@@ -29,14 +31,21 @@ class _SkeletonState extends State<Skeleton> {
             ), 
             onPressed: null,
           ) : 
-          IconButton(
-            icon: Icon(Icons.account_circle), 
-            onPressed: () {
-              Navigator.push(
-                context, 
-                MaterialPageRoute(builder: (context) => Skeleton(body: AccountView())),
-              );
-            }
+          Row(children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search, color: Colors.white,),
+            ),
+            IconButton(
+              icon: Icon(Icons.account_circle),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Skeleton(body: AccountView())),
+                );
+              }
+              ),
+
+            ],
           ),
         ],
       ),
@@ -44,7 +53,7 @@ class _SkeletonState extends State<Skeleton> {
       bottomNavigationBar: CurvedNavigationBar(
         height: 55,
         color: Colors.blue,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         animationDuration: Duration(milliseconds: 210),
         items: <Widget>[
           Icon(Icons.list, size: 20, color: Colors.white,),
@@ -57,7 +66,10 @@ class _SkeletonState extends State<Skeleton> {
             //TODO: Add other cases
             case 3: {
               print("3 clicked");
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Skeleton(body: FavoriteJobList())));
+              setState(() {
+                FavoriteJobList();
+              });
+              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => Skeleton(body: FavoriteJobList())));
             }
             break;
           }
