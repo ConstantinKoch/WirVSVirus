@@ -27,11 +27,7 @@ class _SkeletonState extends State<Skeleton> {
           Text('') : 
           Row(children: <Widget>[
             IconButton(
-            ),
-              icon: Icon(Icons.search, color: Colors.white,),
-            IconButton(
               icon: Icon(Icons.account_circle), 
-          ],
               onPressed: () {
                 Navigator.push(
                   context, 
@@ -39,7 +35,7 @@ class _SkeletonState extends State<Skeleton> {
                 );
               }
             )
-          ),
+          ]),
         ],
       ),
       body: this.body,

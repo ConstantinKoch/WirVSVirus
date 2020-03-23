@@ -7,15 +7,6 @@ class JobDetails extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Column(
-    );
-        ),
-        ListTile(
-        ),
-            title: Text('Lastname: ' + user.getLastname)
-        ListTile(
-            title: Text('Description: ' + user.getDescription)
-        ),
-      ],
       children: [
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
@@ -23,11 +14,14 @@ class JobDetails extends StatelessWidget{
             child: Icon(Icons.account_circle),
             fit: BoxFit.contain,
           ),
-        ListTile(
-        ),
-            title: Text('Username: ' + user.getUsername)
         ),
         ListTile(
-            title: Text('Firstname: ' + user.getFirstname)
+          title: Text('Username: ' + user.getUsername),
+        ),
+        ListTile(
+            title: Text('Firstname: ' + user.getFirstname),
+        ),
+      ],
+    );
   }
 }
