@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wirvsvirus/AccountView.dart';
+import 'JobView.dart';
 import 'package:wirvsvirus/JobDetails.dart';
 import 'package:wirvsvirus/Skeleton.dart';
 import 'Jobs.dart';
 import 'Skeleton.dart';
+
 
 class JobOverview extends StatelessWidget {
   final List<Jobs> jobs = getJobs();
@@ -22,10 +25,10 @@ class JobOverview extends StatelessWidget {
             child:Column(
               children: <Widget>[
                 IconButton(
-                  icon:Icon(IconData(59475, fontFamily: 'MaterialIcons')),
+                  icon: Icon(IconData(59475, fontFamily: 'MaterialIcons')),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(
-                        builder:(context) => Skeleton(body: JobOverview() /* change to right activity*/ )
+                        builder:(context) => Skeleton(body: AccountView())
                     )
                     );
                   },
@@ -35,7 +38,13 @@ class JobOverview extends StatelessWidget {
             )
           ),
             title: Text(job.title),
-            subtitle: Text('Employer: ' + job.employer + ', Donation: ' + job.donation.toString()),
+            subtitle: Row(
+              children: [
+                Text(job.employer), 
+                Spacer(),
+                Text('Spende: ' + job.donation.toString()),
+              ],
+            ),
             trailing: IconButton(
                   icon: Icon(IconData(58377, fontFamily: 'MaterialIcons', matchTextDirection: true)),
                   onPressed: () {
@@ -47,7 +56,7 @@ class JobOverview extends StatelessWidget {
             ),
             onTap: (() {
               Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Skeleton(body: JobDetails())
+                  builder: (context) => Skeleton(body: JobView(job))
             )
             );
           }
@@ -57,6 +66,8 @@ class JobOverview extends StatelessWidget {
     );
   }
 }
+
+
 
 class JobListTile extends ListTile {
   final Jobs job;

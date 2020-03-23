@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'DonateYourWork',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        backgroundColor: Colors.white,
       ),
       home: Skeleton(body:JobOverview()),
     );
